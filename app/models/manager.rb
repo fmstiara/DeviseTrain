@@ -4,5 +4,5 @@ class Manager < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   
-  validates_length_of :name, within: 3..20, on: :create, message: "must be present"
+  validates_length_of :name, within: 3..20, message: "must be present"
 end
